@@ -14,6 +14,7 @@ Note: you should be able to enter the french word using any case
 fr_en_dict={}
 
 aFile=open("fr_en.txt")
+
 for line in aFile:
     result=line.split(":")
     if len(result)==2:
