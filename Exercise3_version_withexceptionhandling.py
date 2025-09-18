@@ -38,12 +38,7 @@ while attempts <= MAX_NB_OF_ATTEMPTS: # The maximum number of attempts is 6!
         break # The secret number is found, I can leave the loop
     
     attempts = attempts + 1 # to increment the number of attempts
-    
-# I may leave the loop because the number as been found or 
-# because I've reached the maximum number of attempts.
-# I need to test that:
-    
-if attempts > 6:
+else:   # The following block will be executed if we leave the loop because the loop condition is False:
     print("The secret number was:", secret)
     
     
