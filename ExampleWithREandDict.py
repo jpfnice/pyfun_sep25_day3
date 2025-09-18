@@ -1,6 +1,19 @@
 import re
 
 def beginWith(aDict, aText):
+    """
+
+    Parameters
+    ----------
+    aDict : a dict
+    aText : a string
+
+    Returns
+    -------
+    newDict : a new dict that contains the element of aDict that have a 
+    key that begin with the text aText (the test is case insensitive)
+
+    """
     newDict={}
     for k in aDict.keys():
         if re.match(f"^{aText}.*", k, re.IGNORECASE):
