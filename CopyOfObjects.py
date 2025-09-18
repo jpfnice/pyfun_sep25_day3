@@ -1,3 +1,9 @@
+"""
+The = operator (assigment operator) does not create a copy of the value you assign .
+If you want to create a copy, you can use the function copy() of the copy module, or a copy() method if one exists
+
+"""
+
 import copy
 
 l1=[56,78,100]
