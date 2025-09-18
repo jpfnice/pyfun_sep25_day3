@@ -8,13 +8,15 @@ import copy
 
 l1=[56,78,100]
 
-l2=l1
+#l2=l1
+#l2=l1.copy() # The copy method of list is used
+l2=copy.copy(l1) # The copy() function of the module copy is used
 
-#l2=copy.copy(l1) 
-
-#l2=l1.copy()
+print("l1", l1)
+print("l2", l2)
 
 l2.append(200)
+
 print(l2, id(l2))
 print(l1, id(l1))
 
