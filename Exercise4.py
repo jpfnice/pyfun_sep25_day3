@@ -11,6 +11,7 @@ If it does not exist you could print a sorted list of all the french words your 
 Note: you should be able to enter the french word using any case
 """
 
+# The dict is created here:
 fr_en_dict={"Ciel":"Sky", 
             "Terre":"Earth", 
             "Ville":"City", 
@@ -18,16 +19,13 @@ fr_en_dict={"Ciel":"Sky",
             "Rouge":"Red", 
             "Mer":"Sea"}
 
+# To print the dict:
 print(fr_en_dict)
 
+# To print it again in a more readable way:
 for k,v in fr_en_dict.items():
     print(k,"->",v)
     
-# # Here is another option to create the dict:
-frW=("Ciel", "Terre", "Ville", "Voiture", "Rouge", "Mer")
-enW=("Sky", "Earth", "City", "Car", "Red", "Sea")
-
-
      
 fr=input("Enter a french word, I'll give you it's translation in English: ")
 
